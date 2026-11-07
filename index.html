@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light" />
     <link rel="icon" href="data:," />
     <title>Leyton's Wild ONE! — Contribute to Her Future</title>
     <meta name="description" content="Welcome to Leyton's Wild ONE! Celebrate her first birthday by contributing to her retirement fund — a gift for her future, invested automatically." />
@@ -29,26 +29,6 @@
         --line: #dce8c8;
         --shadow: 0 18px 50px rgba(34, 51, 31, 0.16);
         --radius: 28px;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          color-scheme: dark;
-          --bg: #10231a;
-          --bg-2: #16281c;
-          --card: #1d3524;
-          --ink: #f2f7e8;
-          --ink-soft: #c2d4b4;
-          --jungle: #3fa065;
-          --jungle-dark: #2e7d4f;
-          --leaf: #6fbe8a;
-          --gold: #ffb62e;
-          --gold-dark: #f2a81d;
-          --terra: #ff8563;
-          --terra-dark: #e76f51;
-          --bark: #c08b52;
-          --line: #33543c;
-          --shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
-        }
       }
       * { box-sizing: border-box; }
       html { -webkit-text-size-adjust: 100%; }
@@ -304,12 +284,6 @@
       @media (min-width: 760px) {
         .wrap { padding-bottom: 84px; }
       }
-      @media (prefers-reduced-motion: reduce) {
-        .canopy .leaf, h1 .one, .a-lion, .a-giraffe, .a-elephant, .a-monkey, .a-zebra,
-        .cta, .confetti i, .riser, .riser svg, .walker, .walker .walker-bob { animation: none !important; }
-        .risers, .walker { display: none; }
-        .cta { transition: none; }
-      }
     </style>
   </head>
   <body>
@@ -379,8 +353,8 @@
         <span class="party-tag">You're invited to a wild celebration</span>
         <h1>Welcome to Leyton's <span class="wild">Wild</span> <span class="one">ONE!</span></h1>
         <p class="lede">
-          She's turning <strong>1 today</strong> — she can't walk, talk, or hold down a job yet…
-          but if you want to <strong>help her retire early</strong>, you're in the right place.
+          She has <strong>zero income</strong>, <strong>zero expenses</strong>, and a
+          <strong>retirement plan most adults envy</strong>.
           Skip the wrapping paper and add a gift straight to <strong>her future</strong> instead —
           every contribution goes into her <strong>retirement fund</strong> and is
           <strong>invested automatically</strong> for her.
@@ -552,8 +526,6 @@
 
     <script>
       (function () {
-        var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        if (prefersReduced) return;
         var holder = document.getElementById("confetti");
         if (!holder) return;
         var colors = ["#2e7d4f", "#57a773", "#f2a81d", "#e76f51", "#8a5a33"];
