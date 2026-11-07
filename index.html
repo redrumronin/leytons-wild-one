@@ -194,23 +194,15 @@
         font-size: 0.92rem; font-weight: 800; color: var(--ink-soft); line-height: 1.45;
       }
       .secure-note svg { flex: 0 0 auto; margin-top: 1px; }
-      /* ---------- Limit banner ---------- */
-      .limit {
-        display: flex; gap: 14px; align-items: center;
-        background: color-mix(in srgb, var(--gold) 15%, var(--card));
-        border: 2px dashed color-mix(in srgb, var(--gold) 72%, #b97e00);
-        border-radius: 20px;
-        padding: 16px 18px;
-        margin-top: 20px;
-        text-align: left;
+      /* ---------- Invested note ---------- */
+      .invested-note {
+        margin: 20px 0 0;
+        text-align: center;
+        font-weight: 800;
+        color: var(--ink-soft);
+        line-height: 1.5;
+        font-size: 0.98rem;
       }
-      .limit .amount {
-        font-family: "Fredoka", "Nunito", sans-serif;
-        font-weight: 700; font-size: 1.7rem; line-height: 1; white-space: nowrap; color: var(--ink);
-      }
-      .limit .amount small { display: block; font-family: "Nunito", sans-serif; font-weight: 900; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-top: 5px; white-space: normal; }
-      .limit p { margin: 0; font-weight: 700; color: var(--ink-soft); line-height: 1.5; font-size: 0.98rem; }
-      .limit p strong { color: var(--ink); }
       /* ---------- Steps ---------- */
       .steps { margin-top: 30px; }
       .steps h2 {
@@ -481,10 +473,7 @@
         </p>
       </section>
 
-      <div class="limit" role="note">
-        <div class="amount">$5,000.00<small>Room left this year</small></div>
-        <p>Leyton can receive <strong>$5,000.00 more this year</strong> before reaching her annual contribution limit — so every gift, big or small, still fits. Contributions are <strong>invested automatically</strong>.</p>
-      </div>
+      <p class="invested-note">Contributions are invested automatically.</p>
 
       <section class="steps" aria-label="How it works">
         <h2>How it works</h2>
